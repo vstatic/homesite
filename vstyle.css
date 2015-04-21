@@ -1,0 +1,170 @@
+#container{
+    margin: 70px 30px 20px 30px;
+}
+#site-title{
+    color : #08c;
+    margin-left: 15px;
+}
+#main-menu > ul{
+    margin-left : 80px;
+}
+#main-menu ul li.active a{
+    font-weight : bold;
+    color : #08c;
+}
+#right-menu{
+    margin-right: 15px;
+}
+@media (min-width: 768px) {
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0px;
+  }
+}
+.blue{
+    color : #08c;
+}
+.table thead tr th{
+    font-size: 14px; 
+    text-align: center;
+    vertical-align: middle;
+    color: #08c;
+}
+.table tbody tr td{
+    font-size: 12px;
+    vertical-align: middle;
+}
+.table tbody.center td{
+    text-align: center;
+}
+.table caption{
+    margin-bottom: 10px;
+}
+.table tbody tr td.td_right{
+    text-align:right;
+}
+.table tbody tr td.td_left{
+    text-align:left;
+}
+td ul, td ol{
+    /*margin-left:1.5em;*/
+    text-align:left;
+    padding-left:16px;
+}
+dl dd{
+    margin-bottom: 10px;
+}
+#toolbar .navbar{
+    margin-bottom: 0px;
+}
+.datepicker{
+    z-index: 2000 !important;  /* larger than 1050 in order to work in modal */
+}
+
+/**
+ * Progress bars with centered text
+ */
+.progress {
+    position: relative;
+}
+
+.progress-bar {
+    z-index: 1;
+    position: absolute;
+}
+
+.progress span {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    /* color: #08c; */
+    width: 100%;
+}
+.btn-dark{
+    color: #fff;
+    background-color: #888;
+    border-color: #ccc;
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active,
+.btn-dark.active,
+.open .dropdown-toggle.btn-dark {
+  color: #ffffff;
+  background-color: #999;
+}
+
+.btn-radio {
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+.btn-radio:hover,
+.btn-radio:focus{
+    color: #333333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+}
+.btn-radio:active,
+.btn-radio.active,
+.open .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+/*wide modal*/
+/*.modal.modal-wide .modal-dialog {
+  width: 80%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+*/
+
+/*=====File uploader button==== */
+.file_uploader_button {
+    position: relative;
+    overflow: hidden;
+}
+.file_uploader_button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+.file_uploader_button input {
+        filter: alpha(opacity=0);
+        font-size: 100%;
+        height: 100%;
+    }
+}
+/*=====File uploader button end==== */
+
+/*=====ScrollBar Style Begin==== */
+::-webkit-scrollbar {
+    width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,136,204,0.6); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.9); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,136,204,0.8); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,255,255,0.4); 
+}
+/*=====ScrollBar Style End==== */
